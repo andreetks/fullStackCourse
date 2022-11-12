@@ -1,4 +1,5 @@
 import { useState } from "react";
+import StatisticLine from "./Components/StatisticLine";
 
 const Statistics = ({ good, neutral, bad }) => {
   return (
@@ -8,9 +9,9 @@ const Statistics = ({ good, neutral, bad }) => {
         <p>No Feedback given</p>
       ) : (
         <div>
-          <p>good {good}</p>
-          <p>neutral {neutral}</p>
-          <p>bad {bad}</p>
+          <StatisticLine text="good" value={good} />
+          <StatisticLine text="neutral" value={neutral} />
+          <StatisticLine text="bad" value={bad} />
           <p>all {good + neutral + bad}</p>
           <p>average {(good - bad) / (good + neutral + bad)} </p>
           <p>positive {(good * 100) / (good + neutral + bad)}%</p>
