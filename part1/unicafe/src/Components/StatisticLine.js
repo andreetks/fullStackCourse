@@ -1,9 +1,12 @@
-import React from 'react'
+import React from "react";
 
-const StatisticLine = ({text, value}) => {
+const StatisticLine = ({ text, value }) => {
   return (
-    <p>{text} {value}</p>
-  )
-}
+    <tr>
+      <td>{text}</td>
+      <td>{value}</td>
+    </tr>
+  );
+};
 
-export default StatisticLine
+export default StatisticLine;
