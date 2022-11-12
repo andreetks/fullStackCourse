@@ -1,16 +1,15 @@
 import React from "react";
+import Part from "./Part";
 
 const Content = ({ content }) => {
   return (
-    <>
+    <div>
       {content.map( data => {
         return(
-            <p key={data[1]}>
-                {data[0]} {data[1]}
-            </p>
+            <Part part={data} />
         )
       })}
-    </>
+    </div>
   );
 };
 
