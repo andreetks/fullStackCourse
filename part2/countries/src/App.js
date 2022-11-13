@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import Country from "./components/Country";
+import Country from "./Components/Country";
 import axios from "axios";
 
 const App = () => {

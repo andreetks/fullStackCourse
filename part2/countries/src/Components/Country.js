@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 
 const Country = ({ country }) => {
   const weather_key = process.env.REACT_APP_WEATHER_KEY;
+  console.log(weather_key);
   const [weather, setWeather] = useState([]);
   const url =
     "https://api.openweathermap.org/data/2.5/weather?q=" +
@@ -15,6 +16,7 @@ const Country = ({ country }) => {
     axios.get(url).then((response) => {
       setWeather(response.data);
     });
+    // eslint-disable-next-line
   }, []);
 
   return (
