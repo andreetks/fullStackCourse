@@ -1,21 +1,21 @@
 const Person = ({ person, handle }) => {
   return (
-    <li style={{ padding: "7px 0" }}>
-      <span style={{ paddingRight: "10px" }}>
+    <li style={{ margin: "10px 0" }}>
+      <div>
         {person.name} / {person.number}
-      </span>
-      <button
-        style={{
-          width: "30px",
-          background: "red",
-          border: "1px solid black",
-          color: "white",
-          borderRadius: "5px",
-        }}
-        onClick={handle}
-      >
-        X
-      </button>
+        <button
+          style={{
+            backgroundColor: "red",
+            color: "white",
+            marginLeft: "10px",
+            border: "none",
+            borderRadius: "5px",
+          }}
+          onClick={handle}
+        >
+          delete
+        </button>
+      </div>
     </li>
   );
 };
