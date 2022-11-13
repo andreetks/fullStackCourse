@@ -5,7 +5,6 @@ import Total from "./Total";
 
 const Course = ({ course }) => {
   const total = course.parts.reduce((s, p) => {
-    console.log(`this is s -> ${s}  && this is p -> ${p.exercises}`);
     return s + p.exercises;
   }, 0);
 
